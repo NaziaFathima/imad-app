@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    text-align: center;
+    margin-left: 60px;
     max-width: 800px;
     margin: 0 auto;
     color: #3c1313;
