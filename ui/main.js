@@ -2,7 +2,6 @@ console.log('Loaded!');
 
 // Change the text of the main-text div
  var button = document.getElementById('counter');
- var counter = 0;
  button.onCLick = function(){
      
      //create a request to the counter endpoint
@@ -11,8 +10,8 @@ console.log('Loaded!');
      
      //capture the response and store it in a variable
      request.onreadystatechange = function(){
-         if(request.readyState == XMLHttpRequest.Done){
-             if(request.status == 200){
+         if(request.readyState === XMLHttpRequest.Done){
+             if(request.status === 200){
                 var counter =  request.responeText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
@@ -25,4 +24,4 @@ console.log('Loaded!');
     request.send(null);
  
      
- }
+ };
