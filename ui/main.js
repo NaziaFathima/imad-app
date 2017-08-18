@@ -2,4 +2,4 @@ console.log('Loaded!');
 
 // Change the text of the main-text div
 var element = document.getElementById('main-text');
-element.InterHTML = "New Value";
+element.InnerHTML = "New Value";
