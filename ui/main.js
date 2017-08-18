@@ -14,7 +14,7 @@ console.log('Loaded!');
          if(request.readyState == XMLHttpRequest.Done){
              if(request.status == 200){
                 var counter =  request.responeText;
-                var span = document.getElementById('counter');
+                var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
              }
          } 
