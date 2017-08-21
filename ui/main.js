@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 // Change the text of the main-text div
  var button = document.getElementById('counter');
- button.onCLick = function(){
+ button.onclick = function(){
      
      //create a request to the counter endpoint
      var request = new XMLHttpRequest();
