@@ -12,7 +12,7 @@
      request.onreadystatechange = function(){
          if(request.readyState === XMLHttpRequest.Done){
              if(request.status === 200){
-                var counter =  request.responeText;
+                var counter = request.responeText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
              }
@@ -54,11 +54,11 @@
 };
     
     var nameInput = document.getElementById('name');
-    var name1 = nameInput.value; 
+    var name = nameInput.value; 
      
      //Make a request to the server and send the name
      
-     request.open('GET','http://nfathima07.imad.hasura-app.io/submit-name?name='+ name1, true);
+     request.open('GET','http://nfathima07.imad.hasura-app.io/submit-name?name='+ name, true);
     request.send(null);
     
      //Capture a list of names and render it as a list
