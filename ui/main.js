@@ -1,8 +1,8 @@
 
 
 // Change the text of the main-text div
- var button = document.getElementById('counter');
- button.onclick = function(){
+ var button1 = document.getElementById('counter');
+ button1.onclick = function(){
      
      //create a request object
      var request = new XMLHttpRequest();
