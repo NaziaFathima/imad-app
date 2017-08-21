@@ -1,8 +1,8 @@
 
 
 // Change the text of the main-text div
- var button1 = document.getElementById('counter');
- button1.onclick = function(){
+ var button = document.getElementById('counter');
+ button.onclick = function(){
      
      //create a request object
      var request = new XMLHttpRequest();
@@ -13,8 +13,8 @@
          if(request.readyState === XMLHttpRequest.DONE){
              if(request.status === 200){
                 var counter = request.responeText;
-                var span1 = document.getElementById('count');
-                span1.innerHTML = counter.toString();
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
              }
          } 
      };
