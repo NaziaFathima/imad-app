@@ -4,7 +4,7 @@ console.log('Loaded!');
  var button = document.getElementById('counter');
  button.onclick = function(){
      
-     //create a request to the counter endpoint
+     //create a request object
      var request = new XMLHttpRequest();
      
      
