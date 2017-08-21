@@ -25,8 +25,7 @@
  };
  
  //Submit name
- var nameInput = document.getElementById('name');
- var name1 = nameInput.value;
+ 
  var submit = document.getElementById('submit_btn');
  submit.onclick = function()
  {
@@ -53,7 +52,9 @@
         }
     } 
 };
-     
+    
+    var nameInput = document.getElementById('name');
+    var name1 = nameInput.value; 
      
      //Make a request to the server and send the name
      
