@@ -59,7 +59,7 @@
      
      //Make a request to the server and send the name
      
-     request.open('GET','http://nfathima07.imad.hasura-app.io/submit-name?name='+ name, true);
+    request.open('GET','http://nfathima07.imad.hasura-app.io/submit-name?name='+ name, true);
     request.send(null);
     
  };
