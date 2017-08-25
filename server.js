@@ -89,7 +89,7 @@ app.get('/counter',function(req,res){
 
 app.get('/articles/:articleName', function(req,res){
     
-    pool.query('SELECT * FROM article WHERE title =' + req.params.articleName, function(err,result){
+    pool.query("SELECT * FROM article WHERE title ='" + req.params.articleName + "'", function(err,result){
        if(err){
            res.status(500).send(err.toString());
        } else {
@@ -104,17 +104,18 @@ app.get('/articles/:articleName', function(req,res){
     });
     res.send(createTemplate(articles[articleName]));
 });
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
-});
 
-app.get('/article-two', function (req, res) {
-  res.send('Article two requested and will be served here.');
-});
+//app.get('/article-one', function (req, res) {
+ // res.send(createTemplate(articleOne));
+//});
 
-app.get('/article-three', function (req, res) {
-  res.send('Article three requested and will be served here.');
-});
+//app.get('/article-two', function (req, res) {
+  //res.send('Article two requested and will be served here.');
+//});
+
+//app.get('/article-three', function (req, res) {
+ // res.send('Article three requested and will be served here.');
+//});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
