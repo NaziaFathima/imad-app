@@ -14,6 +14,8 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
+var articles = ["article-one" ,"article-two" ,"article-three"];
+
 var articleOne={
     title: 'Article One : Nazia Fathima',
     heading: 'Article One',
